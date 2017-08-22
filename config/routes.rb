@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'demo#index'
+
   get 'demo/index'
 
   #default route, may be phased out in future versions of Rails
