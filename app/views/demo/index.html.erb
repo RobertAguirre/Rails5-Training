@@ -1,2 +1,10 @@
 <h1>Demo#index</h1>
 <p>"Hello world from index"</p>
+
+<a href="/demo/hello">Hello page 1</a><br />
+
+<!-- link_to (text, target)
+"demo/index"
+{:controller => 'demo', :action => 'index'}
+-->
+<%= link_to('Hello page 2', {:action => 'hello'}) %><br />
