@@ -1,1 +1,21 @@
 <h1>"Hello world from hello"</h1>
+<!-- Calculates but no output -->
+<% 1 + 1 %>
+<!-- Calculates and outputs value -->
+<%= 1 + 1 %><br />
+
+<!-- Interpolate a string -->
+<% target = "world" %>
+<%= "Hello #{target}" %><br />
+
+<!-- Puts to the rails console, returns 3 to view -->
+<%=
+3.times do |n|
+  puts n
+end
+%><br />
+
+<!-- Prints to the screen -->
+<% 3.times do |n| %>
+  <%= n %>
+<% end %>
