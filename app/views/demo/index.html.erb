@@ -8,3 +8,9 @@
 {:controller => 'demo', :action => 'index'}
 -->
 <%= link_to('Hello page 2', {:action => 'hello'}) %><br />
+
+
+
+<!-- link_to with URL parameters -->
+<%= link_to('Hello with parameters', {:action => 'hello', :page => 5, :id => 20}) %>
+<br />
