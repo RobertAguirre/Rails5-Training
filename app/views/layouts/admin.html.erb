@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple CMS: <%= @page_title || "Admin Area" %> </title>
+    <!-- Templates and layouts not in sequence, gathers instance variavbles and binds them to the template -->
+  </head>
+
+  <body>
+
+    <% if !flash[:notice].blank? %>
+      <div class="notice">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+
+    <!-- Before yield -->
+    <%= yield %>
+    <!-- After yield -->
+
+  </body>
+</html>
