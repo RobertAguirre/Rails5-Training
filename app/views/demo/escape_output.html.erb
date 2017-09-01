@@ -1,0 +1,16 @@
+<% evil_string = "<script>alert('Gotcha!');</script>" %>
+<% good_string = "<strong>Welcome to my Site!</strong>" %>
+
+
+<!-- Escaped by default -->
+<%= evil_string %><br />
+<%= good_string %><br />
+
+<!-- Doesn't escape, one time, need to make sure its safe though
+<%= raw evil_string %><br />
+<%= raw good_string %><br />
+-->
+
+<!-- Doesn't escape, marks as safe not just now but further down the page as well. -->
+<%= evil_string.html_safe %><br />
+<%= good_string.html_safe %><br />

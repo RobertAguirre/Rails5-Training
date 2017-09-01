@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'demo/hello'
   get 'demo/other_hello'
   get 'demo/google'
+  get 'demo/escape_output'
 
   #default route, may be phased out in future versions of Rails
     #get ':controller(/:action(:id))'
