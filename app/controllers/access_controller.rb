@@ -2,6 +2,9 @@ class AccessController < ApplicationController
 
   layout 'admin'
 
+  #whitelist approach vs black with except vs only
+  before_action :confirmed_logged_in, :except => [:login, :attempt_login, :logout]
+
   def menu
     # display text and links
   end
@@ -35,5 +38,6 @@ class AccessController < ApplicationController
     flash[:notice] = 'Logged out'
     redirect_to(access_login_path)
   end
+
 
 end
