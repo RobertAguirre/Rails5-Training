@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+#Provides the capabilities for sorting and reordering objects in a list.
+gem 'acts_as_list', '~> 0.9.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
