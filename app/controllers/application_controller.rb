@@ -11,4 +11,5 @@ class ApplicationController < ActionController::Base
       # redirect_to prevents requested action from running
     end
   end
+  
 end
